@@ -1,0 +1,24 @@
+
+docker pull mongo ----- get the mongo from docker image official site
+
+docker run -d -p 27017:27017 --name shopping-mongo mongo ----- run exec command
+
+docker ps ---- show what's running right now
+
+docker logs -f shopping-mongo ------- all logs of docker machine in mongo
+
+docker exec -it shopping-mongo /bin/bash ------interactive terminal
+
+ls ---- show all libraries
+
+mongo ---- when it clicked, now we can run commands to mongo db like insert/select all and more
+[
+show dbs 
+
+use CatalogDb ----- when enter - it create new Database inside
+
+--if it rwrite: switched to db CatalogDb --- all commands inside  CatalogDb--
+
+db.createCollection('Products')
+
+]
